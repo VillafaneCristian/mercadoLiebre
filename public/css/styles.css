@@ -27,12 +27,16 @@
 }
 
 .contenedor-barra-busqueda input{
-    padding: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
 }
 
 .contenedor-barra-busqueda button{
     background-color: #fff;
-    padding: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
 }
 
 .contenedor-copy {
@@ -99,6 +103,7 @@ a i{
 .main-article-descripcion{
     display: none;
     padding: 15px;
+    font-size: 16px;
 }
 
 .contenedor-detalle i{
@@ -116,20 +121,24 @@ a i{
 .contenedor-precio-descuento{
     display: flex;
     padding: 15px;
+    align-items: center;
 }
 
 .main-article-precio{
    width: 40%;
+   font-size: 18px;
 }
 
 .main-article-descuento{
     color: #39b54a;
     width: 60%;
+    font-size: 16px;
 }
 
 .main-section-subtitulo{
     margin-bottom: 10px;
     margin-top: 10px;
+    font-size: 24px;
 }
 
 /*ESTILOS DEL FOOTER*/
@@ -145,10 +154,95 @@ a i{
     margin-bottom: 5px;
 }
 
-.index-footer div p{
-    margin-bottom: 25px;
+.index-footer div h3{
+    font-size: 16px;
 }
 
+.index-footer div p{
+    margin-bottom: 25px;
+    font-size: 12px;
+}
+
+.index-footer > p{
+    font-size: 12px;
+    text-align: left;
+}
+
+
+/*ESTILOS PARA EL ARCHIVO DE LOGIN.HTML*/
+
+.main-login{
+    padding: 40px 10px;
+    background-color: #ebebeb;
+}
+
+.login-formulario input{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+.login-formulario button{
+    margin: auto;
+    display: block;
+    background-color: #1259c3;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*ESTILOS PARA EL ARCHIVO DE REGISTER.HTML*/
+
+.register-main-formulario{
+    padding: 40px;
+    background-color: #ebebeb;
+}
+
+.register-formulario input{
+    display: block;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 15px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.contenedor-opciones-checkbox{
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-opciones-checkbox label{
+    width: 40px;
+
+}
+
+.register-formulario button{
+    background-color: #1259c3;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.register-formulario label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.register-botones-contenedor{
+    text-align: center;    
+    margin-top: 40px;
+}
+
+.register-boton-envio:hover{
+    background-color: #0022AA;
+}
 
 /*TABLET*/
 
@@ -166,11 +260,10 @@ a i{
         box-shadow : 0px 0px 10px rgb ( 100 , 100 , 100 );
     }
 
-    .main-article-descripcion{
+    .index-main-section article:hover .main-article-descripcion{
         display: block;
     }
 
-       
 }
 
 /*DESKTOP*/
@@ -209,6 +302,24 @@ a i{
     .index-main-section article {
         width: 20%;
         margin: 5px;
+    }
+
+    .contenedor-detalle i:hover{
+        transform: rotate(270deg) ;
+    }
+
+    .index-footer-contenedor{
+        display: flex;
+    }
+
+    .login-formulario{
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .register-formulario{
+        max-width: 600px;
+        margin: auto;
     }
 
 }
